@@ -1,0 +1,158 @@
+/* Base Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+/* body {
+  background-color: lightblue;
+} */
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+}
+
+h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Base Styles */
+/* -------------------- */
+/* Conditional Background Styles And Containers */
+
+.cover {
+  background-image: url("../../../asset/cloudy-weather-Ocean-Backgrounds.webp");
+  /* background-image: url("../../../asset/561723-water-cold-winter-snow-nature-mountains-landscape-Yosemite_National_Park-El_Capitan.webp"); */
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+  height: 825px;
+}
+
+.cover.warm {
+  background-image: url("../../../asset/561723-water-cold-winter-snow-nature-mountains-landscape-Yosemite_National_Park-El_Capitan.webp");
+  /* background-image: url("../../../asset/cloudy-weather-Ocean-Backgrounds.webp"); */
+  height: 825px;
+}
+.cover.default {
+  background-image: url("../../../asset/2560x1600-1086043-sunlight-trees-landscape-mountains-sunset-night-lake-nature-reflection-snow-winter-ice-cold-frost-shrubs-Russia-wilderness-tundra-cloud-mountain-weather-dawn-season-mou.jpeg");
+  height: 825px;
+  /* background-image: url("../../../asset/cloudy-weather-Ocean-Backgrounds.webp"); */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.card {
+  width: 100%;
+  justify-self: center;
+
+  border: 1px solid #252525;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: all 300ms;
+  margin-top: 100px;
+  margin-left: 750px;
+  /*  */
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0.37);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 32px;
+  min-height: 200px;
+  color: white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 375px);
+  gap: 15px;
+  justify-content: center;
+  justify-items: center;
+
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Conditional Background Styles And Containers */
+/* -------------------- */
+/* Space Rendering */
+
+.space-box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.space-box .search-bar {
+  display: block;
+  width: 80%;
+  padding: 15px;
+
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+  margin-left: 110px;
+
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+
+  color: #313131;
+  font-size: 20px;
+}
+
+.search-bar {
+  border: none;
+  margin: none;
+  text-align: center;
+}
+
+/* Space Rendering */
+/* -------------------- */
+/* Text Styles And buttons  */
+
+button {
+  border-width: 1px;
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  background: #fff;
+  position: absolute;
+  border: 2px solid skyblue;
+  margin-left: 500px;
+  cursor: pointer;
+}
+
+.location-box .location {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+/* Text Styles And buttons  */
+/* -------------------- */
