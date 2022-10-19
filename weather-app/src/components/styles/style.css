@@ -53,6 +53,67 @@ h2 {
   /* background-image: url("../../../asset/cloudy-weather-Ocean-Backgrounds.webp"); */
 }
 
+.autumn {
+  background-image: url("../../../asset/autumn.jpg");
+  height: 825px;
+  /* background-image: url("../../../asset/cloudy-weather-Ocean-Backgrounds.webp"); */
+}
+
+.rain {
+  background-image: url("../../../asset/rain01.jpg");
+  height: 825px;
+  /* background-image: url("../../../asset/cloudy-weather-Ocean-Backgrounds.webp"); */
+}
+
+.snow {
+  background-image: url("../../../asset/snow.jpg");
+  height: 825px;
+  /* background-image: url("../../../asset/cloudy-weather-Ocean-Backgrounds.webp"); */
+}
+
+.sunny {
+  background-image: url("../../../asset/sunny01.jpg");
+  height: 825px;
+  /* width:1440px; */
+  /* background-image: url("../../../asset/cloudy-weather-Ocean-Backgrounds.webp"); */
+}
+
+.reallySunny {
+  background-image: url("../../../asset/reallySunny.jpg");
+  height: 825px;
+  /* background-image: url("../../../asset/cloudy-weather-Ocean-Backgrounds.webp"); */
+}
+
+.clouds {
+  background-image: url("../../../asset/clouds.jpg");
+  height: 825px;
+  /* background-image: url("../../../asset/cloudy-weather-Ocean-Backgrounds.webp"); */
+}
+
+.lightning {
+  background-image: url("../../../asset/lightning.jpg");
+  height: 825px;
+  /* background-image: url("../../../asset/cloudy-weather-Ocean-Backgrounds.webp"); */
+}
+
+.hill {
+  background-image: url("../../../asset/hill.jpg");
+  height: 825px;
+  /* background-image: url("../../../asset/cloudy-weather-Ocean-Backgrounds.webp"); */
+}
+
+.sunRain {
+  background-image: url("../../../asset/sunRain.jpg");
+  height: 825px;
+  /* background-image: url("../../../asset/cloudy-weather-Ocean-Backgrounds.webp"); */
+}
+
+.cold {
+  background-image: url("../../../asset/cold.jpg");
+  height: 825px;
+  /* background-image: url("../../../asset/cloudy-weather-Ocean-Backgrounds.webp"); */
+}
+
 .container {
   width: 100%;
   max-width: 1200px;

@@ -50,6 +50,40 @@ function WeatherHome(props) {
     );
   }
 
+  const background = (search) => {
+    if(search === null) {
+      return "cover default"
+    }
+    if (search.main.temp < 10 && search.weather[0].main === "Clear") {
+      return "hill"
+    }
+    if (search.main.temp > 23 && search.weather[0].main === "Haze") {
+      return "reallySunny"
+    }
+    if (search.main.temp > 20 && search.weather[0].main === "Clear") {
+      return "sunny"
+    }
+    if (search.main.temp > 23 && search.weather[0].main === "Clouds") {
+      return "sunny"
+    }
+    if (search.weather[0].main === "Rain" && search.main.temp < 23) {
+      return "rain"
+    }
+    if (search.weather[0].main === "Rain" && search.main.temp > 23) {
+      return "sunRain"
+    }
+    if (search.weather[0].main === "Clouds" && search.main.temp < 23 && search.main.temp > 5) {
+      return "clouds"
+    }
+    if (search.weather[0].main === "Snow") {
+      return "snow"
+    }
+    if (search.main.temp < 0) {
+      return "cold"
+    }
+
+  }
+
   //   function coverChange() {
   //     if (typeof search === null) {
   //       return "cover default";
@@ -71,7 +105,8 @@ function WeatherHome(props) {
         //     : "cover"
         //   coverChange()
         //   cover
-        {search === null ? "cover default" : "cover"}
+        // {search === null ? "cover default" : "cover"}
+        { background(search) }
       >
         <div className="space-box">
           <h1> The Mr.Weather App </h1>
